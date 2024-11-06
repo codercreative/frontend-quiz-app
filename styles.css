@@ -24,7 +24,35 @@ body {
   margin: 0;
 }
 
-.header,
+.header {
+  display: flex;
+  justify-content: space-around;
+  height: 6em;
+  padding: 0 10px;
+}
+
+.quiz-topic-container {
+  display: flex;
+  align-items: center;
+}
+
+.light-dark-container {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+}
+
+.sun-btn,
+.moon-btn {
+  border: none;
+  background: transparent;
+  cursor: pointer;
+}
+
+.toggle-btn {
+  cursor: pointer;
+}
+
 .main {
   display: flex;
   flex-direction: column;
@@ -32,10 +60,6 @@ body {
   align-items: center;
   max-width: 350px;
   margin: 0 auto;
-}
-
-.header {
-  height: 6em;
 }
 
 .title-container {
@@ -96,4 +120,10 @@ a {
   display: flex;
   gap: 30px;
   text-decoration: none;
+}
+
+/* Interactive with JavaScript */
+.topic-icon,
+.quiz-topic {
+  display: none;
 }
